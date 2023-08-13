@@ -16,6 +16,6 @@ int main(void)
 	{
 		putchar(i++);
 	}
-	cout << "\n";
+	putchar('\n');
 	return (0);
 }
