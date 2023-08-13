@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Description: program to print all numbers from 0 to 9
+ * Description: program to print all numbers of base 10
  * Return: Always 0 (success)
  */
 
@@ -12,11 +12,11 @@ int main(void)
 {
 	int i = 0;
 
-	while (i < 10)
+	while (i <= 9)
 	{
-		printf("%i", i);
+		putchar('0' + i);
 		i++;
 	}
-	printf('\n');
+	putchar('\n');
 	return (0);
 }
