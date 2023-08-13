@@ -10,9 +10,11 @@
 
 int main(void)
 {
-	for (char i = 'a'; i <= 'z'; i++)
+	char i = 'a';
+
+	while (i <= 'z')
 	{
-		putchar(i);
+		putchar(i++);
 	}
 	cout << "\n";
 	return (0);
