@@ -25,11 +25,11 @@ int main(void)
 				putchar('0' + i);
 				putchar('0' + j);
 				putchar('0' + k);
-				if (i == 7 && j == 8 && k == 9)
-					continue;
-
-				putchar(',');
-				putchar(' ');
+				if (i + j + k != 24)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 				k++;
 			}
 			j++;
