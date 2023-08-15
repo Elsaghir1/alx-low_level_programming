@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "main"
+#include "main.h"
 
 /**
  * main - Entry point
- * Description: program to print all numbers of base 10
+ * Description: program to print _putchar with prototype
  * Return: Always 0 (success)
  */
 
