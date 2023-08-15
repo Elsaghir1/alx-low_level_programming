@@ -1,8 +1,8 @@
-#include "main"
+#include "main.h"
 
 /**
  * main - Entry point
- * Description: program to print all numbers of base 10
+ * Description: program to print all alphabet
  * Return: Always 0 (success)
  */
 
