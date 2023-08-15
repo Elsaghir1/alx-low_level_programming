@@ -2,6 +2,8 @@
 
 /**
  * islower - to konw the lowercase letters
+ * @c: input from other function
+ * Return: 1 if c true else 0
  */
 
 int _islower(int c)
