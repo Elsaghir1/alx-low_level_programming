@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: program to print all alphabet
- * Return: Always 0 (success)
+ * print_alphabet - print alphabet by
  */
 
 void print_alphabet(void)
