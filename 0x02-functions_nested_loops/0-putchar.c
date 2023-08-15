@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "main.h"
 
 /**
@@ -11,9 +8,10 @@
 
 int main(void)
 {
-	str[] = "_putchar";
+	char str[] = "_putchar";
+	int i = 0;
 
-	for (int i = 0; i < sizeof(str); i++)
+	for (i = 0; i < sizeof(str); i++)
 	{
 		_putchar(str[i]);
 	}
