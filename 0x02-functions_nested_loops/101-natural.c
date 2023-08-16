@@ -3,10 +3,10 @@
 /**
  * main - Entry piont
  * Description: calculate the sum of the multiples of 3 and 5 below 1024
- * Retrun: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
 	int sum, i;
 
