@@ -4,7 +4,6 @@
  * print_diagonal - print digonal of n numbers of \
  *
  * @n: input from other function
- *
 */
 
 void print_diagonal(int n)
