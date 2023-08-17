@@ -5,7 +5,6 @@
  *
  * @n: input from other function
  *
- * Return: n numbers of \
 */
 
 void print_diagonal(int n)
@@ -20,7 +19,7 @@ void print_diagonal(int n)
 		{
 			for (sp = 1; sp <= i; sp++)
 				_putchar(' ');
-			_putchar('\');
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
