@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - print digonal of n numbers of \
+ * print_diagonal - print digonal line of n numbers
  *
  * @n: input from other function
 */
@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		{
 			for (sp = 1; sp <= i; sp++)
 				_putchar(' ');
-			_putchar(92);
+			_putchar(92);/*is equal to '/' char*/
 			_putchar('\n');
 		}
 	}
