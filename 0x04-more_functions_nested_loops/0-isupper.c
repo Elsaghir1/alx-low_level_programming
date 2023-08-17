@@ -3,6 +3,8 @@
 /*
  * _isupper - check if c is upper
  *
+ * Desciption: check if c is upper
+ *
  * @c: input from other function
  *
  * Return: 1 if it's uppercase else 0
