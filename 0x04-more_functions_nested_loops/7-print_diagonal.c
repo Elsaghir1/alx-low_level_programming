@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - print digonal line of n numbers
+ * print_diagonal - print digonal line
  *
- * @n: input from other function
+ * @n: the number of times the \ should be printed
 */
 
 void print_diagonal(int n)
