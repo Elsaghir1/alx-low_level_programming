@@ -32,14 +32,16 @@ bool check(char c)
 char *cap_string(char *str)
 {
 	int i;
+	bool flag = true;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (check(str[i]))
-		{
-			if (str[i + 1] >= 97 && str[i + 1] <= 122)
-				str[i] -= 32;
-		}
+			flag = true;
+		else if (str[i] >= 97 && str[i] <= 122 && flag)
+			str[i] -= 32, flag = false;
+		else
+			flag = false;
 	}
 	return (str);
 }
