@@ -33,6 +33,7 @@ char *cap_string(char *str)
 {
 	int i;
 	bool flag = true;
+	char *p = str;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -43,5 +44,5 @@ char *cap_string(char *str)
 		else
 			flag = false;
 	}
-	return (str);
+	return (p);
 }
