@@ -5,7 +5,7 @@
  *
  * @s: input from other function
  *
- * Return: Always 0.
+ * Return: string.
 */
 
 char *leet(char *s)
@@ -17,7 +17,7 @@ char *leet(char *s)
 
 	while (*s)
 	{
-		for (i = 0; i < sizeof(key); i++)
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
 			if (*s == key[i] || *s == key[i] + 32)
 				*c = 48 + value[i];
