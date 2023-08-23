@@ -39,7 +39,10 @@ char *cap_string(char *str)
 		if (check(*str))
 			flag = true;
 		else if (*str >= 97 && *str <= 122 && flag)
-			*str -= 32, flag = false;
+		{
+			*str -= 32;
+			flag = false;
+		}
 		else
 			flag = false;
 		str++;
