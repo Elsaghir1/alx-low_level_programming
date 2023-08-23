@@ -8,17 +8,17 @@
  * Return: Always 1 or 0.
 */
 
-bool check(char c)
+int check(char c)
 {
 	char s[] = " \t\n,;.!?\"(){}";
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < 12; i++)
 	{
 		if (c == s[i])
-			return (true);
+			return (1);
 	}
-	return (false);
+	return (0);
 }
 
 /**
@@ -34,7 +34,7 @@ char *cap_string(char *str)
 	bool flag = true;
 	char *p = str;
 
-	while (*str != '\0')
+	while (*str)
 	{
 		if (check(*str))
 			flag = true;
