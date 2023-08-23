@@ -31,20 +31,20 @@ int check(char c)
 
 char *cap_string(char *str)
 {
-	bool flag = true;
+	int flag = 1;
 	char *p = str;
 
 	while (*str)
 	{
 		if (check(*str))
-			flag = true;
+			flag = 1;
 		else if (*str >= 97 && *str <= 122 && flag)
 		{
 			*str -= 32;
-			flag = false;
+			flag = 0;
 		}
 		else
-			flag = false;
+			flag = 0;
 		str++;
 	}
 	return (p);
