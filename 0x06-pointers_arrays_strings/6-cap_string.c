@@ -31,18 +31,18 @@ bool check(char c)
 
 char *cap_string(char *str)
 {
-	int i;
 	bool flag = true;
 	char *p = str;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*str != '\0')
 	{
-		if (check(str[i]))
+		if (check(*str))
 			flag = true;
-		else if (str[i] >= 97 && str[i] <= 122 && flag)
-			str[i] -= 32, flag = false;
+		else if (*str >= 97 && *str <= 122 && flag)
+			*str -= 32, flag = false;
 		else
 			flag = false;
+		str++;
 	}
 	return (p);
 }
