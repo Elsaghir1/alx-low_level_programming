@@ -5,6 +5,7 @@
  * is a prime number, otherwise return 0.
  *
  * @n: input
+ * @val: divisor
  *
  * Return: Always 0.
 */
@@ -26,9 +27,9 @@ int is_prime_number(int n)
 
 int check(int n, int val)
 {
-	if (val * val > n)
+	if (val >= n && n > 1)
 		return (1);
-	else if (n % val == 0 || n == 1 || n < 0)
+	else if (n % val == 0 || n <= 1)
 		return (0);
 	else
 		return (check(n, val + 1));

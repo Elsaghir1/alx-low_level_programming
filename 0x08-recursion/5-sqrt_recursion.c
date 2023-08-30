@@ -5,6 +5,7 @@
  * square root of a number.
  *
  * @n: input
+ * @val: square root
  *
  * Return: Always 0.
 */
