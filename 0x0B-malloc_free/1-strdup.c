@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-	int sz = 0;
+	int sz = 0, i = 0;
 	char *c;
 
 	if (str == NULL)
@@ -20,7 +20,6 @@ char *_strdup(char *str)
 	while (str[sz] != '\0')
 		sz++;
 	c = malloc(sz * sizeof(*str) + 1);
-	int i = 0;
 
 	if (c == 0)
 		return (NULL);
