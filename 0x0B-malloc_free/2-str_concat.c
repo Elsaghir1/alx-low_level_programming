@@ -28,12 +28,11 @@ int len(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int sz1 = len(s1), sz2 = len(s2);
+	int sz1 = len(s1), sz2 = len(s2), i = 0;
 	char *c = malloc((sz1 + sz2) * sizeof(char) + 1);
 
 	if (c == 0)
 		return (0);
-	int i = 0;
 
 	for (; i <= sz1 + sz2; i++)
 	{
