@@ -28,6 +28,11 @@ int len(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
+	if (s1 == NULL)
+		s1 = "\0";
+	if (s2 == NULL)
+		s2 = "\0";
+
 	int sz1 = len(s1), sz2 = len(s2), i = 0;
 	char *c = malloc((sz1 + sz2) * sizeof(char) + 1);
 
