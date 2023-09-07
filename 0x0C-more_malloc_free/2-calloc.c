@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte
+ * *_memset - fills memory with a constant byte
  *
  * @s: first input
  * @b: second input
  * @n: third input
  *
- * Return: Always 0.
+ * Return: s
 */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -21,7 +21,7 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * _calloc - function that allocates memory for an array, using malloc.
+ * * _calloc - function that allocates memory for an array, using malloc.
  *
  * @nmemb: first input
  * @size: second input
