@@ -36,6 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 	c = malloc(nmemb * sizeof(int));
+
 	if (c == 0)
 		return (NULL);
 
