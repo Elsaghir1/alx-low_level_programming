@@ -19,21 +19,25 @@ int _strlen(const char *s)
 }
 
 /**
- * _strlen - return the length of string
+ * _strcpy - function that copies the string pointed to by src,
+ * including the terminating null byte (\0), to the buffer pointed to by dest
  *
- * @s: input from another function
+ * @dest: first input
+ * @src: second input
  *
- * Return: Always 0
+ * Return: Always 0.
 */
 
-int _strlen(const char *s)
+char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
+	int i = -1;
 
-	while (*s != '\0')
-		len++, s++;
+	do {
+		i++;
+		dest[i] = src[i];
+	} while (src[i] != '\0');
 
-	return (len);
+	return (dest);
 }
 
 /**
