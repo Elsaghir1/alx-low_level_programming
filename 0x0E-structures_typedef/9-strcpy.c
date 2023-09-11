@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 
 /**
  * _strcpy - function that copies the string pointed to by src,
