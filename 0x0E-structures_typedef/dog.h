@@ -5,8 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-int _putchar(char c);
-
 /**
  * struct dog - a dog struct
  *
@@ -22,7 +20,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-}
+};
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
