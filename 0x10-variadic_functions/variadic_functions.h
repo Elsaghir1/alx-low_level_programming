@@ -5,10 +5,21 @@
 #include <string.h>
 #include <stdlib.h>
 
-int _putchar(char c);
-void print_name(char *name, void (*f)(char *));
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int));
+/**
+ * struct token - token
+ * @token: format token
+ * @f: function associated
+ */
+typedef struct token
+{
+	char *token;
+	void (*f)(char *, va_list);
+}token_t;
 
+int _putchar(char c);
+int sum_them_all(const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...);
+void print_strings(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
 
 #endif
