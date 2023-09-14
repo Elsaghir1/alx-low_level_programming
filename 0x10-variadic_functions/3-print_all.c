@@ -27,7 +27,7 @@ void fint(char *separator, va_list v)
  */
 void ffloat(char *separator, va_list v)
 {
-	printf("%s%d", separator, va_arg(v, double));
+	printf("%s%f", separator, va_arg(v, double));
 }
 
 /**
@@ -40,8 +40,8 @@ void fstring(char *separator, va_list v)
 	char *str = va_arg(v, char *);
 
 	switch ((int)(!str))
-	case 1:
-		str = "(nil)";
+		case 1:
+			str = "(nil)";
 
 	printf("%s%s", separator, str);
 }
