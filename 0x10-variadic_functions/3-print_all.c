@@ -51,9 +51,7 @@ void fstring(char *separator, va_list v)
  * print_all - function that prints anything.
  *
  * @format: input
- * @...: other input
  *
- * Return: Always 0.
 */
 
 void print_all(const char * const format, ...)
