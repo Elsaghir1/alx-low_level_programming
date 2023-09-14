@@ -5,7 +5,7 @@
  *
  * @n: input
  * @...: other input
- * Return: Always 0.
+ * Return: the integer sum.
 */
 
 int sum_them_all(const unsigned int n, ...)
@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (!n)
 		return (0);
-	va_start(v,n);
+	va_start(v, n);
 	while (i--)
 		sum += va_arg(v, int);
 	va_end(v);
