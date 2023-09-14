@@ -31,7 +31,7 @@ void ffloat(char *separator, va_list v)
 }
 
 /**
- * fstirng - format stirng
+ * fstring - format stirng
  * @separator: string
  * @v: argument pointer
  */
@@ -56,7 +56,7 @@ void fstring(char *separator, va_list v)
 
 void print_all(const char * const format, ...)
 {
-	| int i = 0, j;
+	int i = 0, j;
 	char *separator = "";
 	va_list v;
 	token_t tokens[] = {
