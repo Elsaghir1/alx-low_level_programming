@@ -19,7 +19,7 @@ for (i = 0; i < ht->size; i++)
 	node = ht->array[i];
 	while (node != NULL)
 	{
-		if (flag)
+		if (flag == 1)
 			printf(", ");
 
 		printf("'%s': '%s'", node->key, node->value);
